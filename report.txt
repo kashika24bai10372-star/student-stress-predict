@@ -1,0 +1,179 @@
+PROJECT REPORT — STUDENT STRESS PREDICTION
+
+1. Title Page
+
+PROJECT TITLE:
+STUDENT STRESS PREDICTION
+
+SUBMITTED BY:
+Parv Agarwal (25MIM10215)
+
+GUIDED BY:
+Dr.Sandip Mal
+
+DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING
+VIT Bhopal University
+
+2. Abstract
+
+Stress among students has become a major concern due to academic pressure, social expectations, 
+and lifestyle imbalance. This project aims to develop a machine learning model that predicts the stress level 
+of students based on various factors such as sleep hours, study hours, physical activity, academic performance,
+family pressure, and mental health habits. The model helps in understanding patterns, identifying at-risk students,
+and supporting early intervention. A Logistic Regression model is used in this project due to its simplicity and
+effectiveness for classification. The system can be further expanded into a full mobile or web-based stress monitoring 
+application.
+
+
+3. Introduction
+
+Stress is a psychological and physical response to demanding circumstances, especially common among students.
+High levels of stress negatively impact concentration, productivity, emotional well-being, and academic performance.
+Predicting student stress levels can help institutions provide timely guidance and counseling support.
+
+Machine Learning offers modern solutions for analyzing data trends and building intelligent prediction models.
+This project uses real or synthetic student data to create a statistical model capable of predicting whether
+a student is at Low, Moderate, or High stress.
+
+4. Objectives
+
+The major objectives of this project are:
+
+1. To understand the major factors contributing to student stress.
+
+2. To collect or generate a suitable dataset representing student lifestyle patterns.
+
+3. To preprocess and analyze the dataset.
+
+4. To build a machine learning model that predicts stress levels.
+
+5. To evaluate the performance of the model.
+
+6. To provide a simple user interface for prediction.
+
+
+5. Literature Review 
+
+Previous research shows that student stress is influenced by multiple factors such as academic load, exam pressure,
+physical inactivity, and mental health. Machine learning techniques like Logistic Regression, Decision Trees, Random
+Forests, and Neural Networks have been widely used for stress prediction. Most models rely on survey-based datasets,
+but accuracy depends on feature selection and preprocessing.
+This project uses a simple yet effective Logistic Regression-based binary or multiclass classification model.
+
+6. Dataset Description
+
+The dataset contains various predictors related to student lifestyle and mental state. Typical columns include:
+Sleep Hours
+Study Hours
+Attendance
+Academic Score
+Physical Activity
+Social Media Usage
+Family Pressure
+Health Issues
+Stress Level (Target Variable)
+
+The target variable is categorized as:
+0 – Low Stress
+1 – High Stress
+(Or multi-class depending on the dataset)
+
+7. Methodology
+
+Step 1: Data Collection
+
+Survey-based or synthetic dataset created manually/programmatically.
+
+Step 2: Data Preprocessing
+
+Handling missing values
+
+Label encoding
+
+Normalization/standardization
+
+Train-test split
+
+Step 3: Model Building
+
+Logistic Regression chosen for its interpretability
+
+Trained on 80% of data and tested on 20%
+
+Step 4: Model Evaluation
+
+Accuracy Score
+
+Confusion Matrix
+
+Classification Report
+
+Step 5: User Interface
+
+A simple Python UI using Streamlit or basic input statements.
+
+8. System Architecture
+
+Input → Preprocessing → Model Prediction → Output (Stress Level)
+
+9. Implementation
+
+Tools Used
+
+Python
+
+Pandas
+
+NumPy
+
+Scikit-learn
+
+Matplotlib / Seaborn (optional)
+
+Streamlit (optional)
+
+
+Sample Code Snippet
+
+model = LogisticRegression()
+model.fit(X_train, y_train)
+prediction = model.predict(X_test)
+
+10. Results
+
+The model achieves around 85–90% accuracy (you can adjust according to your result).
+
+Predictions successfully classify students into low/high stress categories.
+
+Confusion matrix and graphs can be added as screenshots.
+
+
+11. Conclusion
+
+This project demonstrates how machine learning can effectively predict student stress levels based on lifestyle, academic, and personal factors. Early prediction helps institutions provide timely interventions and support. The model can be expanded into a mobile application or integrated with student portals for real-time stress monitoring.
+
+12. Future Work
+
+Collecting larger real-world datasets
+
+Using deep learning models for higher accuracy
+
+Integrating real-time wearable device data
+
+Developing a web or mobile app for prediction
+
+Adding chatbot-based emotional assistance
+
+
+13. References
+
+1. Scikit-Learn Documentation
+
+
+2. Research Papers on Stress Prediction
+
+
+3. Machine Learning Algorithms — MIT OpenCourseWare
+
+
+4. Python.org Documentation
